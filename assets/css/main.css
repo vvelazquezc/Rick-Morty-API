@@ -1,1 +1,33 @@
-@import './colors.css'
+@import './colors.css';
+@import './general.css';
+@import './navegation.css';
+
+
+.body-background {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imgaes/home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper-header {
+    grid-area: header;
+}
+.wrapper-header .logo {
+    padding: 40px 0 0 20px;
+    width: 25%;
+}
+.wrapper-main {
+    grid-area: main;
+}
+.grid-main {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template:
+        "header header" 100px
+        "nav main" auto /
+        100px auto
+    ;
+}
