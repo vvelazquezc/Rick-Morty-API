@@ -1,0 +1,43 @@
+.wrapper-main {
+    grid-area: main;
+}
+.wrapper-episodes {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(1fr);
+}
+.wrapper-seasson {
+    display: flex;
+    flex-flow: row;
+}
+.wrapper-episodes--episode {
+    grid-column: span 1;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    background-color: var(--background-segundary);
+}
+
+select {
+    width: 150px;
+    margin-left: 20px;
+    color: white;
+    height: 32px;
+    padding-left: 20px;
+    background-color: var(--background-main);
+    border-radius: 20px;
+    border: none;
+    appearance: none;
+}
+select:hover {
+    width: 150px;
+    margin-left: 20px;
+    color: white;
+    height: 32px;
+    padding-left: 20px;
+    background-color: var(--background-main);
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3), 0 0px 3px #fff, 0 0 3px #38eeff, 0 0 3px #38eeff;
+    border: none;
+    appearance: none;
+}    
