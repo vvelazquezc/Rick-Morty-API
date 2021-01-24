@@ -1,8 +1,8 @@
 @import './colors.css';
 @import './general.css';
-@import './mediaQuery.css';
 @import './episode.css';
 @import './navegation.css';
+@import './mediaQuery.css';
 
 .body-background {
     width: 100%;
@@ -22,6 +22,23 @@
     padding-top: 30px;
     width: 20%;
 }
+.wrapper-main {
+    grid-area: main;
+}
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 75vh;
+    overflow: scroll;
+    width: 100%;
+    margin-top: 20px;
+}
+.wrapper-grid--column {
+    padding: 20px 20px;
+    margin: 10px;
+    color: white;
+    background-color: var(--background-segundary);
+}
 .title {
     color: white;
     font-size: 18px;
@@ -32,6 +49,8 @@
     font-size: 14px;
     font-weight: 300;
 }
-.pointer {
-    cursor: pointer;
+.text {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
 }

@@ -27,5 +27,12 @@
     margin-right: 20px;
     background-color: var(--color-main);
     display: inline-flex;
-
+}
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 300;
+    color: var(--color-main);
+    cursor: pointer;
 }
