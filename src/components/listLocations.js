@@ -1,3 +1,4 @@
+import { getLocation } from "../services/get-api.js"
 
 export const listLocations = {
     name: 'listLocations',
@@ -8,8 +9,14 @@ export const listLocations = {
         <p class="date">Dimension: ${dimension}</p>
         <button value="${id}" class="text">The characters</button>
     </article>`,
-    render: function ($container, location) {
+    listeners: function ($container, nextPage, prevPage) {
+    },
+    render: function ($container, location, nextPage, prevPage) {
         const $html = this.template(location)
         $container.innerHTML += $html
+        // this.listeners($container, nextPage, prevPage)
+    },
+    destroy: function () {
+        document.querySelector('.wrapper-grid--column').remove()
     }
 }

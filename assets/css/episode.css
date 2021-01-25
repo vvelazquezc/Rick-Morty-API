@@ -26,3 +26,9 @@ select:hover {
     border: none;
     appearance: none;
 }
+.wrapper-cover img{
+    width: 100px;
+    height: 100px;
+    background-size: 115%;
+    margin-right: 20px;
+}
